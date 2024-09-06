@@ -45,7 +45,7 @@ const Header = () => {
         ))}
       </ul>
 
-      <button className='bg-limegreen font-ubuntu hover:bg-white text-black px-2 py-4 rounded-full font-bold transform hover:scale-105 transition-transform duration-300 cursor-pointer md:flex hidden'>
+      <button className='bg-limegreen font-ubuntu hover:bg-white text-black px-4 py-3 rounded-full font-bold transform hover:scale-105 transition-transform duration-300 cursor-pointer md:flex hidden'>
         Contact Us
       </button>
 
