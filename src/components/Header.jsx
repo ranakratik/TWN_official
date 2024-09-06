@@ -27,7 +27,7 @@ const Header = () => {
       
       <h1 className='text-white md:text-4xl text-3xl font-bold font-ubuntu'>
         
-        The Web <span className='text-limegreen italic'>Nursery</span>
+        The <span className='text-limegreen italic'>Web Nursery</span>
       </h1>
 
       <ul className='lg:flex justify-center items-center gap-8 hidden'>
@@ -45,7 +45,7 @@ const Header = () => {
         ))}
       </ul>
 
-      <button className='bg-limegreen font-ubuntu hover:bg-white text-black px-1 py-3 rounded-full font-bold transform hover:scale-105 transition-transform duration-300 cursor-pointer md:flex hidden'>
+      <button className='bg-limegreen font-ubuntu hover:bg-white text-black px-2 py-3 rounded-full font-bold transform hover:scale-105 transition-transform duration-300 cursor-pointer md:flex hidden'>
         Contact Us
       </button>
 
