@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import herobanner from '../assets/herobanner.png'
+import herobanner from '../assets/herobanner.gif'
 import clients from '../assets/clients.png'
 import AOS from 'aos'
 import'aos/dist/aos.css'

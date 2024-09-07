@@ -1,21 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { FaRocket, FaCode, FaPen } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+// Import GIFs
+import designGif from '../assets/designdev.gif';
+import developmentGif from '../assets/webdev.gif';
+import contentGif from '../assets/contentdev.gif';
+
 const servicesinfo = [
   {
-    icon: <FaRocket className='text-5xl text-lime-500' />,
+    icon: <img src={designGif} alt="Design GIF" className='w-[280px] h-[200px]' />,
     title: "Design",
     about: "Our design team creates futuristic, visually stunning, and user-friendly interfaces that capture your brand's essence. We innovate with AI-driven designs to give your brand a competitive edge.",
   },
   {
-    icon: <FaCode className='text-5xl text-lime-500' />,
+    icon: <img src={developmentGif} alt="Development GIF" className='w-[260px] h-[200px]' />,
     title: "Development",
     about: "We build cutting-edge websites and applications with AI integration, blockchain capabilities, and scalable solutions that future-proof your digital presence for evolving technologies.",
   },
   {
-    icon: <FaPen className='text-5xl text-lime-500' />,
+    icon: <img src={contentGif} alt="Content GIF" className='w-[260px] h-[200px]' />,
     title: "Content",
     about: "We generate AI-enhanced content that resonates deeply with your audience, from SEO-optimized web copy to blog posts powered by predictive algorithms, ensuring maximum reach and engagement.",
   }
@@ -34,7 +38,7 @@ const Services = () => {
 
   return (
     <section id='services' className='w-[90%] m-auto flex flex-col justify-center items-center gap-4 py-16 sm:px-20 bg-white'>
-      <h2 className='text-lime-500 text-[30px] lg:text-[45px] font-semibold mb-6 font-semibold tracking-wide'>
+      <h2 className='text-lime-500 text-[30px] lg:text-[45px] font-ubuntu mb-6 font-semibold tracking-wide'>
         Our Services
       </h2>
 
