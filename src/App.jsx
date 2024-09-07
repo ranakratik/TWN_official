@@ -6,6 +6,7 @@ import About from './components/About'
 import Counter from './components/Counter'
 import Clients from './components/Clients'
 import Founders from './components/Founders'
+import Logoclient from './components/Logoclient'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -18,6 +19,7 @@ const App = () => {
     <Founders />
     <Services />
     <Counter />
+    <Logoclient />
     <Clients />
     <Contact />
     <Footer />
