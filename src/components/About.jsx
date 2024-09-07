@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import about from '../assets/about.png'
+import about from '../assets/about.gif'
 import { FaChevronCircleRight } from 'react-icons/fa'
 import Aos from 'aos'
 import 'aos/dist/aos.css'

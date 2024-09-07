@@ -23,7 +23,7 @@ const Hero = () => {
 <button data-aos= "zoom-in" data-aos-delay= "600" className='bg-limegreen px-6 py-4 rounded-full text-[17px] font-semibold font-ubuntu hover:bg-black hover:text-white'>Get Started Now</button>
 <div data-aos="zoom-in" data-aos-delay= "600" className='flex lg: flex-col justify-center lg:items-start gap-10'></div>
     <img src={clients} alt="" />
-    <p className='font-ubuntu text-[20px] font-bold text-black'>Trusted by 5000+ Customer and Brands Worldwide</p>
+    <p className='font-ubuntu text-[20px] font-bold text-black'>Trusted by Customers and Brands Worldwide</p>
 </div>
 <div>
     <img data-aos= "zoom-in" data-aos-delay= "1000" src={herobanner} className='lg:w-[750px] lg:h-[550px]' alt='' />
