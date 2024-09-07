@@ -45,8 +45,16 @@ const Header = () => {
         ))}
       </ul>
 
-      <button className='bg-limegreen font-ubuntu hover:bg-white text-black px-4 py-3 rounded-full font-bold transform hover:scale-105 transition-transform duration-300 cursor-pointer md:flex hidden'>
-        Contact Us
+      <button><Link
+              to='contact'
+              spy={true}
+              smooth={true}
+              offset={-100}  // Adjust this value based on your layout to position the section correctly
+              duration={500} // Time for the scroll animation (in ms)
+              className='bg-limegreen font-ubuntu hover:bg-white text-black px-4 py-3 rounded-full font-bold transform hover:scale-105 transition-transform duration-300 cursor-pointer md:flex hidden'
+>
+              Contact Us
+              </Link>
       </button>
 
       {/* Mobile menu toggle button */}
