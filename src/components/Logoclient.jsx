@@ -22,7 +22,7 @@ const ClientLogos = () => {
   }, []);
 
   const settings = {
-    dots: true,  // Show dots for better navigation
+    dots: false,  // Remove dots for navigation
     infinite: true,
     speed: 600,
     slidesToShow: 4,

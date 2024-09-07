@@ -80,7 +80,7 @@ const Contact = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder='Enter your valid E-mail here'
+              placeholder='Enter your E-mail here'
               className='w-full bg-slate-900 px-6 py-4 rounded-lg border-none font-ubuntu'
               required
             />
@@ -89,7 +89,7 @@ const Contact = () => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              placeholder='Enter your mobile number here'
+              placeholder='Enter your contact no.'
               className='w-full bg-slate-900 px-6 py-4 rounded-lg border-none font-ubuntu'
               required
             />
