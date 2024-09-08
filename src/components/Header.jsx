@@ -27,7 +27,7 @@ const Header = () => {
       
       <h1 className='text-white md:text-4xl text-3xl font-bold font-ubuntu'>
         
-        The <span className='text-limegreen italic'>Web Nursery</span>
+        The <span className='text-electricblue italic'>Web Nursery</span>
       </h1>
 
       <ul className='lg:flex justify-center items-center gap-8 hidden'>
@@ -51,7 +51,7 @@ const Header = () => {
               smooth={true}
               offset={-100}  // Adjust this value based on your layout to position the section correctly
               duration={500} // Time for the scroll animation (in ms)
-              className='bg-limegreen font-ubuntu hover:bg-white text-black px-4 py-3 rounded-full font-bold transform hover:scale-105 transition-transform duration-300 cursor-pointer md:flex hidden'
+              className='bg-electricblue font-ubuntu hover:bg-white text-black px-4 py-3 rounded-full font-bold transform hover:scale-105 transition-transform duration-300 cursor-pointer md:flex hidden'
 >
               Contact Us
               </Link>

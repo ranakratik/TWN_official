@@ -38,7 +38,7 @@ const Hero = () => {
         <button 
           data-aos="zoom-in" 
           data-aos-delay="600" 
-          className='bg-limegreen px-6 py-4 rounded-full text-[17px] font-semibold font-ubuntu hover:bg-black hover:text-white' 
+          className='bg-electricblue px-6 py-4 rounded-full text-[17px] font-semibold font-ubuntu hover:bg-black hover:text-white' 
           onClick={scrollToContact}
         >
           Get Started Now

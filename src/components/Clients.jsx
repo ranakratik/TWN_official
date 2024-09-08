@@ -48,22 +48,22 @@ const Clients = () => {
     {
       review: "The service exceeded my expectations. Highly recommended!",
       name: "Shahbaz Khan",
-      post: "CEO, Rasayan Udyog"
+      post: ""
     },
     {
       review: "Amazing experience with great support throughout!",
       name: "Deepak Kumar",
-      post: "Founder, Houseey"
+      post: ""
     },
     {
       review: "A seamless process from start to finish. Great job!",
       name: "Palak Raj",
-      post: "Marketing Manager, Lodha"
+      post: ""
     },
     {
       review: "Professional and efficient service. Will definitely return!",
       name: "Nikhil Prajapati",
-      post: "Associate, Prestige Group"
+      post: ""
     },
   ];
 
@@ -72,13 +72,13 @@ const Clients = () => {
       <div className='w-full max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-16'>
         {/* Background Image */}
         <div className='relative lg:w-[50%] w-full' data-aos="fade-right">
-          <div className="absolute inset-0 bg-lime-500 opacity-10 rounded-full"></div>
+          <div className="absolute inset-0 bg-blue-400 opacity-10 rounded-full"></div>
           <img src={testimonialsImage} alt="testimonials" className='w-full rounded-lg shadow-lg relative z-10' />
         </div>
 
         {/* Testimonials Slider */}
         <div className='lg:w-[50%] w-full flex flex-col justify-center items-center text-center lg:text-left' data-aos="fade-left">
-          <h2 className='text-lime-600 text-2xl font-bold uppercase mb-4'>Testimonials</h2>
+          <h2 className='text-blue-400 text-2xl font-bold uppercase mb-4'>Testimonials</h2>
           <h1 className='text-5xl font-semibold text-gray-800 mb-8'>What Our Clients Are Saying</h1>
 
           <div className='w-full mt-10'>
@@ -86,7 +86,7 @@ const Clients = () => {
               {testimonials.map((item, index) => (
                 <div key={index} className='bg-white shadow-xl p-8 rounded-xl mb-8'>
                   <div className='flex justify-center lg:justify-start mb-4'>
-                    <FaQuoteLeft className='text-lime-600 text-5xl' />
+                    <FaQuoteLeft className='text-blue-500 text-5xl' />
                   </div>
                   <p className='text-gray-600 text-lg mb-6'>" {item.review} "</p>
                   <div>

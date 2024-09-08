@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        limegreen: '#c9f31d'
+        electricblue: '#11E3EE'
       },
 
       fontFamily: {

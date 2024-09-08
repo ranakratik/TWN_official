@@ -60,7 +60,7 @@ const ClientLogos = () => {
     <section id='clients' className='bg-gray-100 py-16'>
       <div className='w-full max-w-6xl mx-auto flex flex-col items-center'>
         {/* Section Heading */}
-        <h2 className='text-lime-600 text-3xl font-bold uppercase mb-12' data-aos="fade-up">Our Clients</h2>
+        <h2 className='text-blue-400 text-3xl font-bold uppercase mb-12' data-aos="fade-up">Our Clients</h2>
         
         {/* Slider with Client Logos */}
         <Slider {...settings} className="w-full">

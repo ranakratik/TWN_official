@@ -23,7 +23,7 @@ const Pricing = () => {
 
   return (
     <section id='plans' className='w-[90%] m-auto flex flex-col justify-between items-center gap-2 py-20'>
-      <h1 data-aos="zoom-in" data-aos-delay="200" className='text-lime-500 font-ubuntu text-[19px] font-semibold'>PRICING</h1>
+      <h1 data-aos="zoom-in" data-aos-delay="200" className='text-blue-400 font-ubuntu text-[19px] font-semibold'>PRICING</h1>
       <h1 data-aos="zoom-in" data-aos-delay="400" className='text-black font-semibold lg:text-[60px] text-[50px] lg:leading-[70px] leading-[50px] text-center font-ubuntu'>Choose your perfect plan</h1>
 
       <div data-aos="zoom-in" data-aos-delay="600" className='w-full flex flex-col justify-between items-center gap-10 mt-10'>

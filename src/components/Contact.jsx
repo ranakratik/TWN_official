@@ -104,13 +104,13 @@ const Contact = () => {
             rows="4"
             required
           ></textarea>
-          <button type="submit" className='bg-limegreen px-6 py-4 w-full rounded-md font-semibold text-md font-ubuntu'>
+          <button type="submit" className='bg-electricblue px-6 py-4 w-full rounded-md font-semibold text-md font-ubuntu'>
             Submit Now
           </button>
         </form>
 
         {/* Confirmation message */}
-        {isSubmitted && <p className='text-limegreen mt-4'>Thank you! Your message has been sent successfully.</p>}
+        {isSubmitted && <p className='text-electricblue mt-4'>Thank you! Your message has been sent successfully.</p>}
       </div>
       <div className='lg:w-[50% w-full]'>
         <img data-aos="zoom-in" data-aos-delay="200" src={contactimg} alt="contact img" />

@@ -56,7 +56,7 @@ const Services = () => {
 
   return (
     <section id='services' className='w-[90%] m-auto flex flex-col justify-center items-center gap-4 py-16 sm:px-20 bg-white'>
-      <h2 className='text-lime-500 text-[30px] lg:text-[45px] font-ubuntu mb-6 font-semibold tracking-wide text-center'>
+      <h2 className='text-blue-500 text-[30px] lg:text-[45px] font-ubuntu mb-6 font-semibold tracking-wide text-center'>
         Our Services
       </h2>
 
@@ -105,10 +105,10 @@ const Services = () => {
                   boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)',
                 }}
               >
-                <div className='text-lime-500'>
+                <div className='text-blue-400'>
                   {item.icon}
                 </div>
-                <h1 className='text-[28px] text-lime-500 font-semibold font-ubuntu mt-4'>
+                <h1 className='text-[28px] text-blue-400 font-semibold font-ubuntu mt-4 text-center'>
                   {item.title}
                 </h1>
               </div>

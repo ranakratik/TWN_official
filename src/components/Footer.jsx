@@ -13,7 +13,7 @@ const Footer = () => {
             Let's Start Working together, get in touch!
           </h1>
           <Link to='contact' smooth={true} offset={-100}>
-            <button className='bg-limegreen px-6 py-4 rounded-full text-[17px] font-semibold font-ubuntu hover:bg-white hover:text-black transition-all duration-300'>
+            <button className='bg-electricblue px-6 py-4 rounded-full text-[17px] font-semibold font-ubuntu hover:bg-white hover:text-black transition-all duration-300'>
               Get Started Now
             </button>
           </Link>
@@ -24,7 +24,7 @@ const Footer = () => {
           <h1 className='text-white text-2xl font-ubuntu font-semibold'>Contact Information</h1>
           <div className='flex flex-col justify-center items-start gap-4'>
             <p className='flex justify-center items-center gap-3'>
-              <IoIosMailOpen className='text-limegreen size-8' />
+              <IoIosMailOpen className='text-electricblue size-8' />
               <span className='text-[16px] font-ubuntu text-slate-100'>thewebnursery@gmail.com</span>
             </p>
           </div>
@@ -33,19 +33,19 @@ const Footer = () => {
           <div className='flex flex-col gap-4'>
             <h2 className='text-white text-xl font-ubuntu font-semibold'>Quick Links</h2>
             <div className='flex flex-col gap-2'>
-              <Link to='about' smooth={true} offset={-100} className='text-limegreen text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
+              <Link to='about' smooth={true} offset={-100} className='text-electricblue text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
                 About Us
               </Link>
-              <Link to='founders' smooth={true} offset={-100} className='text-limegreen text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
+              <Link to='founders' smooth={true} offset={-100} className='text-electricblue text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
                 Our Founders
               </Link>
-              <Link to='services' smooth={true} offset={-100} className='text-limegreen text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
+              <Link to='services' smooth={true} offset={-100} className='text-electricblue text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
                 Our Services
               </Link>
-              <Link to='testimonials' smooth={true} offset={-100} className='text-limegreen text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
+              <Link to='testimonials' smooth={true} offset={-100} className='text-electricblue text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
                 Testimonials
               </Link>
-              <Link to='contact' smooth={true} offset={-100} className='text-limegreen text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
+              <Link to='contact' smooth={true} offset={-100} className='text-electricblue text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
                 Contact Us
               </Link>
             </div>
@@ -60,7 +60,7 @@ const Footer = () => {
           </p>
           <div className='flex flex-col justify-center items-start gap-6 w-full'>
             <input type='email' placeholder='Enter your email' className='w-full bg-slate-900 px-6 py-4 rounded-lg border-none font-ubuntu text-white focus:outline-none focus:ring-2 focus:ring-limegreen' />
-            <button className='bg-limegreen px-6 py-4 rounded-xl text-[17px] font-semibold font-ubuntu hover:bg-white hover:text-black transition-all duration-300'>Subscribe Now</button>
+            <button className='bg-electricblue px-6 py-4 rounded-xl text-[17px] font-semibold font-ubuntu hover:bg-white hover:text-black transition-all duration-300'>Subscribe Now</button>
           </div>
         </div>
       </section>
@@ -74,27 +74,27 @@ const Footer = () => {
         </div>
         <div>
           <p className='text-white text-3xl text-center font-ubuntu font-bold'>
-            The Web<span className='text-limegreen italic'>Nursery</span>
+            The <span className='text-electricblue italic'> Web Nursery</span>
           </p>
         </div>
         <div className='flex lg:justify-end justify-center items-center gap-4'>
           <a href='https://www.facebook.com/profile.php?id=61564514108131&mibextid=ZbWKwL' target='_blank' rel='noopener noreferrer'>
-            <FaFacebook className='text-limegreen hover:text-white transition-all duration-300' size={24} />
+            <FaFacebook className='text-electricblue hover:text-white transition-all duration-300' size={24} />
           </a>
           <a href='https://x.com/thewebnursery?t=Hz-oY7WPhYV2rPhJSL2QJg&s=09' target='_blank' rel='noopener noreferrer'>
-            <FaTwitter className='text-limegreen hover:text-white transition-all duration-300' size={24} />
+            <FaTwitter className='text-electricblue hover:text-white transition-all duration-300' size={24} />
           </a>
           <a href='https://www.instagram.com/thewebnursery?igsh=bTBxOHN1NWhic2Y1' target='_blank' rel='noopener noreferrer'>
-            <FaInstagram className='text-limegreen hover:text-white transition-all duration-300' size={24} />
+            <FaInstagram className='text-electricblue hover:text-white transition-all duration-300' size={24} />
           </a>
           <a href='https://www.linkedin.com/company/the-web-nursery/' target='_blank' rel='noopener noreferrer'>
-            <FaLinkedin className='text-limegreen hover:text-white transition-all duration-300' size={24} />
+            <FaLinkedin className='text-electricblue hover:text-white transition-all duration-300' size={24} />
           </a>
         </div>
       </section>
 
       {/* Scroll to Top Button */}
-      <div id='icon-box' className='bg-limegreen text-black p-3 rounded-full hover:bg-black hover:text-white cursor-pointer fixed lg:bottom-6 right-6 bottom-6 transition-all duration-300'>
+      <div id='icon-box' className='bg-electricblue text-black p-3 rounded-full hover:bg-black hover:text-white cursor-pointer fixed lg:bottom-6 right-6 bottom-6 transition-all duration-300'>
         <Link to='hero' spy={true} offset={-100} smooth={true}>
           <FaArrowUp className='w-[35px] h-[35px]' />
         </Link>

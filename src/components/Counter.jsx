@@ -67,7 +67,7 @@ const Counter = () => {
             data-aos="fade-up" // Animation for each counter
             className="flex flex-col justify-center items-center gap-4 transform transition-transform hover:scale-105 hover:bg-opacity-75 bg-gray-900 p-6 rounded-xl shadow-xl"
           >
-            <h1 className="text-lime-500 font-bold text-6xl font-ubuntu drop-shadow-lg">
+            <h1 className="text-blue-400 font-bold text-6xl font-ubuntu drop-shadow-lg">
               {currentCount[index]} {/* Remove the + symbol */}
             </h1>
             <p className="text-white font-ubuntu text-lg font-semibold">
