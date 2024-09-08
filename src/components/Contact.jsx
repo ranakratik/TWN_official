@@ -60,9 +60,9 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact' className='w-[90%] m-auto flex lg:flex-row flex-col justify-between items-center gap-28 py-20' style={{ backgroundColor: 'white' }}>
-      <div data-aos="zoom-in" data-aos-delay="400" className='lg:w-[50%] w-full flex flex-col justify-center items-start gap-8' style={{ backgroundColor: 'rgb(49, 14, 89)', padding: '16px', borderRadius: '24px' }}>
-        <h1 className='text-[45px] font-semibold font-ubuntu' style={{ color: 'rgb(215, 69, 200)' }}>Elevate Your Project with Us!</h1>
+    <section id='contact' className='w-[90%] m-auto flex lg:flex-row flex-col justify-between items-center gap-28 py-20 ' style={{ backgroundColor: 'white' }}>
+      <div data-aos="zoom-in" data-aos-delay="400" className='lg:w-[50%] w-full flex flex-col justify-center items-start gap-8  bg-slate-900' style={{  padding: '16px', borderRadius: '24px' }}>
+        <h1 className='text-[45px] font-semibold font-ubuntu ' style={{ color: 'rgb(215, 69, 200)' }}>Elevate Your Project with Us!</h1>
         <form id='form-box' className='w-full bg-transparent flex flex-col justify-center items-center gap-4' onSubmit={handleSubmit}>
           <input
             type="text"
@@ -74,7 +74,7 @@ const Contact = () => {
             placeholder='Enter your full name here'
             required
           />
-          <div className='w-full flex justify-center items-start gap-4'>
+          <div className='w-full flex justify-center items-start gap-4 '>
             <input
               type="email"
               name="email"

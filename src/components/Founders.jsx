@@ -43,7 +43,7 @@ const MeetTheFounders = () => {
   }, []);
 
   return (
-    <section id="founders" className="w-full py-20 bg-white text-black rounded-3xl shadow-2xl">
+    <section id="founders" className="w-full py-20 bg-white text-black rounded-3xl ">
       <h1 className="text-center" style={{ color: 'rgb(215, 69, 200)' }}>
         <span className="text-[19px] lg:text-[50px] font-ubuntu font-semibold mb-12 tracking-wide">Meet the Founders</span>
       </h1>
@@ -57,7 +57,7 @@ const MeetTheFounders = () => {
             <img 
               src={founder.image} 
               alt={founder.name} 
-              className="rounded-full w-[250px] h-[250px] mx-auto border-4 border-electricblue mb-6 transform hover:scale-110 transition-transform duration-300"
+              className="rounded-full w-[250px] h-[250px] mx-auto border-4 border-steelpink mb-6 transform hover:scale-110 transition-transform duration-300"
             />
             <h2 style={{ color: 'rgb(215, 69, 200)' }} className="text-[28px] font-ubuntu font-semibold mb-2">
               {founder.name}

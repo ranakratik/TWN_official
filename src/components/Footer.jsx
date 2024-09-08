@@ -25,7 +25,7 @@ const Footer = () => {
           <div className='flex flex-col justify-center items-start gap-4'>
             <p className='flex justify-center items-center gap-3'>
               <IoIosMailOpen className='text-white size-8' />
-              <span className='text-[16px] font-ubuntu text-white'>thewebnursery@gmail.com</span>
+              <span className='text-[16px] font-ubuntu text-white'>info@thewebnursery.com</span>
             </p>
           </div>
 

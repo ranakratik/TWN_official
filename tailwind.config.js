@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        electricblue: '#11E3EE'
+        white: '#ffffff' ,
+        black: '#000000' ,
+        russianviolet: '#310e59' ,
+        steelpink: '#d745c8'
       },
 
       fontFamily: {

@@ -25,7 +25,7 @@ const Header = () => {
     <nav style={{ backgroundColor: 'rgb(49, 14, 89)' }} className='w-full flex justify-between items-center gap-1 lg:px-16 px-6 py-4 sticky top-0 z-50'>
       
       <h1 className='md:text-4xl text-3xl font-bold font-ubuntu'>
-      <span style={{ color: 'rgb(255, 255, 255)' }} className='italic'>The </span><span style={{ color: 'rgb(255, 255, 255)' }} className='italic'>Web Nursery</span>
+      <span style={{ color: 'rgb(255, 255, 255)' }} className='italic'>The </span><span className='italic text-steelpink'>Web Nursery</span>
       </h1>
 
       {/* Desktop Menu */}

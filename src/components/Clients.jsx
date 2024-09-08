@@ -86,7 +86,7 @@ const Clients = () => {
               {testimonials.map((item, index) => (
                 <div key={index} className='bg-white shadow-xl p-8 rounded-xl mb-8'>
                   <div className='flex justify-center lg:justify-start mb-4'>
-                    <FaQuoteLeft className='text-[rgb(215, 69, 200)] text-5xl' />
+                    <FaQuoteLeft className='text-steelpink text-5xl' />
                   </div>
                   <p className='text-gray-600 text-lg mb-6'>" {item.review} "</p>
                   <div>
