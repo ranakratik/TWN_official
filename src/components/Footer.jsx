@@ -1,8 +1,6 @@
 import React from 'react';
-import { FaMapMarkedAlt, FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaArrowUp } from 'react-icons/fa';
-import { FaPhoneVolume } from 'react-icons/fa6';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaArrowUp } from 'react-icons/fa';
 import { IoIosMailOpen } from 'react-icons/io';
-import { IoTime } from 'react-icons/io5';
 import { Link } from 'react-scroll';
 
 const Footer = () => {
@@ -11,18 +9,46 @@ const Footer = () => {
       <section className='w-full bg-black grid lg:grid-cols-3 grid-cols-1 justify-between items-start lg:gap-28 gap-16 lg:p-20 p-10'>
         {/* Call to Action */}
         <div className='flex flex-col justify-center items-start gap-10'>
-          <h1 className='text-white font-semibold font-ubuntu text-[40px] leading-[50px]'>Let's Start Working together, get in touch!</h1>
-          <button className='bg-limegreen px-6 py-4 rounded-full text-[17px] font-semibold font-ubuntu hover:bg-white hover:text-black transition-all duration-300'>Get Started Now</button>
+          <h1 className='text-white font-semibold font-ubuntu text-[40px] leading-[50px]'>
+            Let's Start Working together, get in touch!
+          </h1>
+          <Link to='contact' smooth={true} offset={-100}>
+            <button className='bg-limegreen px-6 py-4 rounded-full text-[17px] font-semibold font-ubuntu hover:bg-white hover:text-black transition-all duration-300'>
+              Get Started Now
+            </button>
+          </Link>
         </div>
 
         {/* Contact Information */}
-        <div className='flex flex-col justify-center items-start gap-10'>
+        <div className='flex flex-col justify-center items-start gap-10' id='contact'>
           <h1 className='text-white text-2xl font-ubuntu font-semibold'>Contact Information</h1>
           <div className='flex flex-col justify-center items-start gap-4'>
             <p className='flex justify-center items-center gap-3'>
               <IoIosMailOpen className='text-limegreen size-8' />
               <span className='text-[16px] font-ubuntu text-slate-100'>thewebnursery@gmail.com</span>
             </p>
+          </div>
+
+          {/* Quick Links */}
+          <div className='flex flex-col gap-4'>
+            <h2 className='text-white text-xl font-ubuntu font-semibold'>Quick Links</h2>
+            <div className='flex flex-col gap-2'>
+              <Link to='about' smooth={true} offset={-100} className='text-limegreen text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
+                About Us
+              </Link>
+              <Link to='founders' smooth={true} offset={-100} className='text-limegreen text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
+                Our Founders
+              </Link>
+              <Link to='services' smooth={true} offset={-100} className='text-limegreen text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
+                Our Services
+              </Link>
+              <Link to='testimonials' smooth={true} offset={-100} className='text-limegreen text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
+                Testimonials
+              </Link>
+              <Link to='contact' smooth={true} offset={-100} className='text-limegreen text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
+                Contact Us
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -52,10 +78,18 @@ const Footer = () => {
           </p>
         </div>
         <div className='flex lg:justify-end justify-center items-center gap-4'>
-          <FaFacebook className='text-limegreen size-6 hover:text-white transition-all duration-300' />
-          <FaTwitter className='text-limegreen size-6 hover:text-white transition-all duration-300' />
-          <FaInstagram className='text-limegreen size-6 hover:text-white transition-all duration-300' />
-          <FaYoutube className='text-limegreen size-6 hover:text-white transition-all duration-300' />
+          <a href='https://www.facebook.com/profile.php?id=61564514108131&mibextid=ZbWKwL' target='_blank' rel='noopener noreferrer'>
+            <FaFacebook className='text-limegreen hover:text-white transition-all duration-300' size={24} />
+          </a>
+          <a href='https://x.com/thewebnursery?t=Hz-oY7WPhYV2rPhJSL2QJg&s=09' target='_blank' rel='noopener noreferrer'>
+            <FaTwitter className='text-limegreen hover:text-white transition-all duration-300' size={24} />
+          </a>
+          <a href='https://www.instagram.com/thewebnursery?igsh=bTBxOHN1NWhic2Y1' target='_blank' rel='noopener noreferrer'>
+            <FaInstagram className='text-limegreen hover:text-white transition-all duration-300' size={24} />
+          </a>
+          <a href='https://www.linkedin.com/company/the-web-nursery/' target='_blank' rel='noopener noreferrer'>
+            <FaLinkedin className='text-limegreen hover:text-white transition-all duration-300' size={24} />
+          </a>
         </div>
       </section>
 

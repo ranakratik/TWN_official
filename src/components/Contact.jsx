@@ -63,7 +63,7 @@ const Contact = () => {
     <section id='contact' className='w-[90%] m-auto flex lg:flex-row flex-col justify-between items-center gap-28 py-20'>
       
       <div data-aos="zoom-in" data-aos-delay="400" className='lg:w-[50%] w-full flex flex-col justify-center items-start gap-8 bg-black lg:p-16 p-8 rounded-3xl'>
-        <h1 className='text-white text-[45px] font-semibold font-ubuntu'>Let's talk your project</h1>
+        <h1 className='text-white text-[45px] font-semibold font-ubuntu'>Elevate Your Project with Us!</h1>
         <form id='form-box' className='w-full bg-transparent flex flex-col justify-center items-center gap-4' onSubmit={handleSubmit}>
           <input
             type="text"

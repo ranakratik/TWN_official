@@ -16,7 +16,7 @@ const Header = () => {
   // Correcting the navItem as an array of objects
   const navItems = [
     { link: 'Home', path: 'hero' },
-    { link: 'About', path: 'about' },
+    { link: 'About Us', path: 'about' },
     { link: 'Services', path: 'services' },
     { link: 'Testimonials', path: 'testimonials' },
     

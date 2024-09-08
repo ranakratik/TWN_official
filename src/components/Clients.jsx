@@ -47,18 +47,23 @@ const Clients = () => {
   const testimonials = [
     {
       review: "The service exceeded my expectations. Highly recommended!",
-      name: "Alice Smith",
-      post: "Marketing Manager, XYZ Ltd."
+      name: "Shahbaz Khan",
+      post: "CEO, Rasayan Udyog"
     },
     {
       review: "Amazing experience with great support throughout!",
-      name: "John Doe",
-      post: "CEO, Tech Innovators"
+      name: "Deepak Kumar",
+      post: "Founder, Houseey"
     },
     {
       review: "A seamless process from start to finish. Great job!",
-      name: "Jane Wilson",
-      post: "Project Manager, ABC Corp."
+      name: "Palak Raj",
+      post: "Marketing Manager, Lodha"
+    },
+    {
+      review: "Professional and efficient service. Will definitely return!",
+      name: "Nikhil Prajapati",
+      post: "Associate, Prestige Group"
     },
   ];
 

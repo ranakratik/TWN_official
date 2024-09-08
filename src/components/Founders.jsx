@@ -44,7 +44,7 @@ const MeetTheFounders = () => {
 
   return (
     <section id="founders" className="w-full py-20 bg-gradient-to-r from-gray-900 to-black text-white rounded-3xl shadow-2xl">
-      <h1 className="text-center text-lime-500 text-[30px] lg:text-[45px] font-ubuntu font-bold mb-12 tracking-wide">Meet the Founders</h1>
+      <h1 className="text-center text-lime-500 text-[19px] lg:text-[50px] font-ubuntu font-semibold mb-12 tracking-wide">Meet the Founders</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-7xl mx-auto px-10">
         {foundersInfo.map((founder, index) => (
           <div 
