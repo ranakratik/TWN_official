@@ -54,21 +54,21 @@ const Counter = () => {
     <div className="w-[90%] m-auto lg:flex-row flex-col justify-between items-center gap-28 py-10 relative">
       {/* Animated background with gradient fading from the center */}
       <div className="absolute top-0 left-0 w-full h-full z-0">
-        <div className="bg-gradient-radial from-transparent via-purple-500 to-transparent w-full h-full opacity-40 animate-pulse"></div>
+        <div className="bg-gradient-radial from-transparent via-[rgba(49,14,89,0.7)] to-transparent w-full h-full opacity-30 animate-pulse"></div>
       </div>
 
       <section
         data-aos="zoom-in"
-        className="relative z-10 bg-gradient-to-br from-gray-900 via-gray-800 to-black w-full lg:p-20 p-10 flex lg:flex-row flex-col justify-between items-center gap-20 rounded-3xl shadow-lg"
+        className="relative z-10 bg-gradient-to-br from-[rgb(49,14,89)] via-[rgb(49,14,89)] to-[rgb(49,14,89)] w-full lg:p-20 p-10 flex lg:flex-row flex-col justify-between items-center gap-20 rounded-3xl shadow-lg"
       >
         {counts.map((item, index) => (
           <div
             key={index}
             data-aos="fade-up" // Animation for each counter
-            className="flex flex-col justify-center items-center gap-4 transform transition-transform hover:scale-105 hover:bg-opacity-75 bg-gray-900 p-6 rounded-xl shadow-xl"
+            className="flex flex-col justify-center items-center gap-4 transform transition-transform hover:scale-105 bg-[rgb(49,14,89)] p-6 rounded-xl shadow-xl"
           >
-            <h1 className="text-blue-400 font-bold text-6xl font-ubuntu drop-shadow-lg">
-              {currentCount[index]} {/* Remove the + symbol */}
+            <h1 className="text-white font-bold text-6xl font-ubuntu drop-shadow-lg">
+              {currentCount[index]}
             </h1>
             <p className="text-white font-ubuntu text-lg font-semibold">
               {item.title}

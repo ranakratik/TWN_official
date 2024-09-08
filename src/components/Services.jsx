@@ -56,11 +56,10 @@ const Services = () => {
 
   return (
     <section id='services' className='w-[90%] m-auto flex flex-col justify-center items-center gap-4 py-16 sm:px-20 bg-white'>
-      <h2 className='text-blue-500 text-[30px] lg:text-[45px] font-ubuntu mb-6 font-semibold tracking-wide text-center'>
+      <h2 className='text-[#D745C8] text-[30px] lg:text-[45px] font-ubuntu mb-6 font-semibold tracking-wide text-center'>
         Our Services
       </h2>
 
-      {/* Flexbox layout with space between columns */}
       <div className='flex flex-wrap justify-center gap-10'>
         {servicesinfo.map((item, index) => (
           <div 
@@ -105,10 +104,10 @@ const Services = () => {
                   boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)',
                 }}
               >
-                <div className='text-blue-400'>
+                <div className='text-[#D745C8]'>
                   {item.icon}
                 </div>
-                <h1 className='text-[28px] text-blue-400 font-semibold font-ubuntu mt-4 text-center'>
+                <h1 className='text-[28px] text-[#D745C8] font-semibold font-ubuntu mt-4 text-center'>
                   {item.title}
                 </h1>
               </div>
@@ -125,8 +124,8 @@ const Services = () => {
                   justifyContent: 'center',
                   alignItems: 'center',
                   borderRadius: '15px',
-                  background: 'linear-gradient(135deg, rgba(173,216,230,1) 0%, rgba(240,255,255,1) 100%)',
-                  color: 'black',
+                  background: 'rgb(49, 14, 89)', // Dark color from palette
+                  color: 'white', // White text for contrast
                   transform: 'rotateY(180deg)',
                   flexDirection: 'column',
                   padding: '10px',

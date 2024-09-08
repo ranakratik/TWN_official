@@ -68,25 +68,25 @@ const Clients = () => {
   ];
 
   return (
-    <section id='testimonials' className='relative bg-gray-100 py-20'>
+    <section id='testimonials' className='relative py-20' style={{ backgroundColor: 'rgb(49, 14, 89)' }}>
       <div className='w-full max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-16'>
         {/* Background Image */}
         <div className='relative lg:w-[50%] w-full' data-aos="fade-right">
-          <div className="absolute inset-0 bg-blue-400 opacity-10 rounded-full"></div>
+          <div className="absolute inset-0 bg-white opacity-10 rounded-full"></div>
           <img src={testimonialsImage} alt="testimonials" className='w-full rounded-lg shadow-lg relative z-10' />
         </div>
 
         {/* Testimonials Slider */}
         <div className='lg:w-[50%] w-full flex flex-col justify-center items-center text-center lg:text-left' data-aos="fade-left">
-          <h2 className='text-blue-400 text-2xl font-bold uppercase mb-4'>Testimonials</h2>
-          <h1 className='text-5xl font-semibold text-gray-800 mb-8'>What Our Clients Are Saying</h1>
+          <h2 className='text-[rgb(215, 69, 200)] text-2xl font-bold uppercase mb-4' style={{ color: 'rgb(215, 69, 200)' }}>Testimonials</h2>
+          <h1 className='text-5xl font-semibold text-white mb-8'>What Our Clients Are Saying</h1>
 
           <div className='w-full mt-10'>
             <Slider {...settings}>
               {testimonials.map((item, index) => (
                 <div key={index} className='bg-white shadow-xl p-8 rounded-xl mb-8'>
                   <div className='flex justify-center lg:justify-start mb-4'>
-                    <FaQuoteLeft className='text-blue-500 text-5xl' />
+                    <FaQuoteLeft className='text-[rgb(215, 69, 200)] text-5xl' />
                   </div>
                   <p className='text-gray-600 text-lg mb-6'>" {item.review} "</p>
                   <div>

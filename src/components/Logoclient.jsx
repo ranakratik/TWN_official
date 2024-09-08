@@ -57,16 +57,24 @@ const ClientLogos = () => {
   const clientLogos = [clientLogo1, clientLogo2, clientLogo3, clientLogo4];
 
   return (
-    <section id='clients' className='bg-gray-100 py-16'>
+    <section id='clients' className='py-16' style={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}>
       <div className='w-full max-w-6xl mx-auto flex flex-col items-center'>
         {/* Section Heading */}
-        <h2 className='text-blue-400 text-3xl font-bold uppercase mb-12' data-aos="fade-up">Our Clients</h2>
+        <h2 
+          className='text-3xl font-bold uppercase mb-12' 
+          data-aos="fade-up"
+          style={{ color: 'rgb(215, 69, 200)' }} // Inline style to enforce vibrant pink
+        >
+          Our Clients
+        </h2>
         
         {/* Slider with Client Logos */}
         <Slider {...settings} className="w-full">
           {clientLogos.map((logo, index) => (
             <div key={index} className='flex justify-center items-center p-6'>
-              <div className='bg-white shadow-lg rounded-lg p-4 flex items-center justify-center' style={{ width: '200px', height: '150px' }}>
+              <div 
+                className='bg-[rgb(49, 14, 89)] shadow-lg rounded-lg p-4 flex items-center justify-center' 
+                style={{ width: '200px', height: '150px' }}>
                 <img src={logo} alt={`Client ${index + 1}`} className='w-full h-full object-contain' />
               </div>
             </div>

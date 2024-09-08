@@ -13,48 +13,81 @@ const Header = () => {
     setIsMenuOpen(false);
   }
 
-  // Correcting the navItem as an array of objects
+  // Navbar items
   const navItems = [
     { link: 'Home', path: 'hero' },
     { link: 'About Us', path: 'about' },
     { link: 'Services', path: 'services' },
     { link: 'Testimonials', path: 'testimonials' },
-    
   ];
 
   return (
-    <nav className='w-full flex bg-black justify-between items-center gap-1 lg:px-16 px-6 py-4 sticky top-0 z-50'>
+    <nav style={{ backgroundColor: 'rgb(49, 14, 89)' }} className='w-full flex justify-between items-center gap-1 lg:px-16 px-6 py-4 sticky top-0 z-50'>
       
-      <h1 className='text-white md:text-4xl text-3xl font-bold font-ubuntu'>
-        
-        The <span className='text-electricblue italic'>Web Nursery</span>
+      <h1 className='md:text-4xl text-3xl font-bold font-ubuntu'>
+      <span style={{ color: 'rgb(255, 255, 255)' }} className='italic'>The </span><span style={{ color: 'rgb(255, 255, 255)' }} className='italic'>Web Nursery</span>
       </h1>
 
+      {/* Desktop Menu */}
       <ul className='lg:flex justify-center items-center gap-8 hidden'>
         {navItems.map(({ link, path }) => (
           <Link
             key={path}
-            className='text-white uppercase font-semibold cursor-pointer p-3 rounded-lg hover:bg-limegreen hover:text-black font-ubuntu text-[15px]'
+            className='uppercase font-semibold cursor-pointer p-3 rounded-lg transition-all duration-300 font-ubuntu text-[15px]'
             to={path}
             spy={true}
             offset={-100}
             smooth={true}
+            style={{ color: 'rgb(255, 255, 255)' }}
+            activeStyle={{
+              backgroundColor: 'rgb(215, 69, 200)',
+              color: 'rgb(0, 0, 0)',
+              padding: '12px 24px'
+            }}
+            onMouseEnter={e => {
+              e.target.style.backgroundColor = 'rgb(215, 69, 200)';
+              e.target.style.color = 'rgb(0, 0, 0)';
+              e.target.style.padding = '12px 24px';
+            }}
+            onMouseLeave={e => {
+              e.target.style.backgroundColor = 'transparent';
+              e.target.style.color = 'rgb(255, 255, 255)';
+              e.target.style.padding = '12px 16px';
+            }}
           >
             {link}
           </Link>
         ))}
       </ul>
 
-      <button><Link
-              to='contact'
-              spy={true}
-              smooth={true}
-              offset={-100}  // Adjust this value based on your layout to position the section correctly
-              duration={500} // Time for the scroll animation (in ms)
-              className='bg-electricblue font-ubuntu hover:bg-white text-black px-4 py-3 rounded-full font-bold transform hover:scale-105 transition-transform duration-300 cursor-pointer md:flex hidden'
->
-              Contact Us
-              </Link>
+      {/* CTA Button */}
+      <button>
+        <Link
+          to='contact'
+          spy={true}
+          smooth={true}
+          offset={-100} 
+          duration={500}
+          className='font-ubuntu font-bold transform transition-transform duration-300 cursor-pointer md:flex hidden'
+          style={{
+            backgroundColor: 'rgb(215, 69, 200)',
+            color: 'rgb(0, 0, 0)',
+            padding: '12px 24px',
+            borderRadius: '9999px'
+          }}
+          onMouseEnter={e => {
+            e.target.style.backgroundColor = 'rgb(255, 255, 255)';
+            e.target.style.color = 'rgb(0, 0, 0)';
+            e.target.style.transform = 'scale(1.05)';
+          }}
+          onMouseLeave={e => {
+            e.target.style.backgroundColor = 'rgb(215, 69, 200)';
+            e.target.style.color = 'rgb(0, 0, 0)';
+            e.target.style.transform = 'scale(1)';
+          }}
+        >
+          Contact Us
+        </Link>
       </button>
 
       {/* Mobile menu toggle button */}
@@ -66,21 +99,31 @@ const Header = () => {
         )}
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile Menu */}
       <div
         className={`${
           isMenuOpen ? 'flex' : 'hidden'
-        } w-full h-fit bg-black p-4 absolute top-[72px] left-0`}
+        } w-full h-fit p-4 absolute top-[72px] left-0`}
+        style={{ backgroundColor: 'rgb(49, 14, 89)' }}
         onClick={closeMenu}
       >
         <ul className='flex flex-col justify-center items-center gap-2 w-full'>
           {navItems.map(({ link, path }) => (
             <Link
               key={path}
-              className='text-white uppercase font-semibold cursor-pointer p-3 rounded-lg hover:text-black w-full text-center'
+              className='uppercase font-semibold cursor-pointer p-3 rounded-lg w-full text-center transition-all duration-300'
               to={path}
               offset={-100}
               smooth={true}
+              style={{ color: 'rgb(255, 255, 255)' }}
+              onMouseEnter={e => {
+                e.target.style.backgroundColor = 'rgb(215, 69, 200)';
+                e.target.style.color = 'rgb(0, 0, 0)';
+              }}
+              onMouseLeave={e => {
+                e.target.style.backgroundColor = 'transparent';
+                e.target.style.color = 'rgb(255, 255, 255)';
+              }}
             >
               {link}
             </Link>
