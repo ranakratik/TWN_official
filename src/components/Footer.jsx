@@ -25,7 +25,12 @@ const Footer = () => {
           <div className='flex flex-col justify-center items-start gap-4'>
             <p className='flex justify-center items-center gap-3'>
               <IoIosMailOpen className='text-white size-8' />
-              <span className='text-[16px] font-ubuntu text-white'>info@thewebnursery.com</span>
+              <a
+                href='mailto:info@thewebnursery.com'
+                className='text-[16px] font-ubuntu text-white hover:underline'
+              >
+                info@thewebnursery.com
+              </a>
             </p>
           </div>
 
@@ -33,19 +38,19 @@ const Footer = () => {
           <div className='flex flex-col gap-4'>
             <h2 className='text-[rgb(215,69,200)] text-xl font-ubuntu font-semibold'>Quick Links</h2>
             <div className='flex flex-col gap-2'>
-              <Link to='about' smooth={true} offset={-100} className='text-white text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
+              <Link to='about' smooth={true} offset={-100} className='text-white text-[16px] font-ubuntu hover:text-white transition-all duration-300 cursor-pointer'>
                 About Us
               </Link>
-              <Link to='founders' smooth={true} offset={-100} className='text-white text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
+              <Link to='founders' smooth={true} offset={-100} className='text-white text-[16px] font-ubuntu hover:text-white transition-all duration-300 cursor-pointer'>
                 Our Founders
               </Link>
-              <Link to='services' smooth={true} offset={-100} className='text-white text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
+              <Link to='services' smooth={true} offset={-100} className='text-white text-[16px] font-ubuntu hover:text-white transition-all duration-300 cursor-pointer'>
                 Our Services
               </Link>
-              <Link to='testimonials' smooth={true} offset={-100} className='text-white text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
+              <Link to='testimonials' smooth={true} offset={-100} className='text-white text-[16px] font-ubuntu hover:text-white transition-all duration-300 cursor-pointer'>
                 Testimonials
               </Link>
-              <Link to='contact' smooth={true} offset={-100} className='text-white text-[16px] font-ubuntu hover:text-white transition-all duration-300'>
+              <Link to='contact' smooth={true} offset={-100} className='text-white text-[16px] font-ubuntu hover:text-white transition-all duration-300 cursor-pointer'>
                 Contact Us
               </Link>
             </div>
